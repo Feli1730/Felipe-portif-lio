@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Felipe M Cerqueira — Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#06b6d4;
+      --muted:#9aa4b2;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;background:linear-gradient(180deg,#081021 0%,#071428 100%);color:#e6eef6;line-height:1.5}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:14px;align-items:center}
+    .avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+    h1{font-size:22px;margin:0}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;padding:36px 0}
+    .card{background:var(--card);border-radius:var(--radius);padding:20px}
+    .intro h2{margin:0 0 8px;font-size:28px}
+    .badges{display:flex;gap:8px;margin:12px 0}
+    .badge{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:20px}
+    .project{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:12px;padding:14px;display:flex;gap:12px;align-items:center}
+    .thumb{width:110px;height:70px;border-radius:8px;background:#0d2430;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .thumb img{width:100%;height:100%;object-fit:cover;border-radius:8px}
+    .proj-meta h3{margin:0;font-size:16px}
+    .proj-meta p{margin:6px 0 0;color:var(--muted);font-size:13px}
+    .tags{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}
+    .tag{font-size:12px;padding:5px 8px;background:rgba(255,255,255,0.03);border-radius:8px;color:var(--muted)}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+    form{display:flex;flex-direction:column;gap:10px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:10px;color:inherit}
+    button{background:linear-gradient(90deg,var(--accent),#7c3aed);border:none;padding:10px 14px;border-radius:10px;color:#041025;font-weight:700;cursor:pointer}
+    footer{padding:22px 0;color:var(--muted);font-size:13px}
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr}
+      .projects{grid-template-columns:1fr}
+      .contact{grid-template-columns:1fr}
+      .avatar{width:48px;height:48px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">FM</div>
+        <div>
+          <h1>Felipe M Cerqueira</h1>
+          <p class="lead">Desenvolvedor Frontend criativo e focado em performance</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="intro card">
+        <h2>Olá — eu sou Felipe</h2>
+        <p class="lead">Desenvolvedor Frontend em formação, com habilidades em HTML, Java e Excel. Busco aplicar soluções eficientes e aprimorar meu domínio em tecnologia e análise de dados.</p>
+        <div class="badges">
+          <span class="badge">Excel</span>
+          <span class="badge">HTML</span>
+          <span class="badge">Java</span>
+          <span class="badge">Inglês</span>
+          <span class="badge">Comunicação</span>
+          <span class="badge">Trabalho em equipe</span>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3 style="margin-top:0">Contato</h3>
+        <p class="lead" style="margin:6px 0 10px">Email: <strong>felpmoresz@gmail.com</strong></p>
+        <p class="lead" style="margin:6px 0 10px">Cidade: São Paulo – SP</p>
+        <div style="display:flex;gap:8px;margin-top:10px">
+          <a href="https://www.linkedin.com/in/felipe-moreira-310511317" target="_blank" style="color:var(--muted);text-decoration:none">LinkedIn</a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="projetos">
+      <h2 style="margin:14px 0">Projetos</h2>
+      <div class="projects">
+        <article class="project">
+          <div class="thumb">
+            <img src="imagens/relogio-digital.png" alt="Capa do projeto Relógio Digital">
+          </div>
+          <div class="proj-meta">
+            <h3>Relógio Digital</h3>
+            <p>Meu primeiro projeto, que fiz antes mesmo de começar a estudar.</p>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div style="margin-top:10px">
+              <a href="file:///C:/Users/anapa/OneDrive/relogio%20digital/index.html" target="_blank">
+                <button>Ver Projeto</button>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre" style="margin-top:22px">
+      <h2>Sobre</h2>
+      <div class="card" style="margin-top:12px">
+        <p>Desenvolvedor Frontend em formação, com habilidades em HTML, Java e Excel. Busco aplicar soluções eficientes e aprimorar meu domínio em tecnologia e análise de dados.</p>
+        <ul style="color:var(--muted);margin-top:10px">
+          <li>Disponibilidade: Remoto, Presencial (São Paulo – SP), Híbrido</li>
+          <li>Idiomas: Português (nativo), Inglês (intermediário)</li>
+          <li>Contato: felpmoresz@gmail.com</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contato" style="margin-top:22px">
+      <h2>Contato</h2>
+      <div class="contact">
+        <div class="card">
+          <h3>Me mande uma mensagem</h3>
+          <form action="mailto:felpmoresz@gmail.com" method="GET" enctype="text/plain">
+            <input type="text" name="subject" placeholder="Assunto" />
+            <textarea name="body" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+            <button type="submit">Enviar por email</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3>Baixe meu currículo</h3>
+          <p style="color:var(--muted)">Clique abaixo para baixar meu currículo em PDF.</p>
+          <div style="margin-top:12px">
+            <a href="Felipe_Moreira_-_ (1).pdf" download>
+              <button>Download Currículo</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div>© 2025 Felipe M Cerqueira</div>
+        <div style="color:var(--muted)">Feito com ♥</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
